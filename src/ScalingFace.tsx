@@ -1,8 +1,16 @@
-import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {useState} from 'react';
+import {
+	AbsoluteFill,
+	continueRender,
+	delayRender,
+	interpolate,
+	useCurrentFrame,
+} from 'remotion';
 
 export const ScalingFace: React.FC<{
 	image: string;
 }> = ({image}) => {
+	const [handle] = useState(() => delayRender());
 	const frame = useCurrentFrame();
 	const progress = interpolate(frame, [0, 120], [0, 1], {
 		extrapolateRight: 'clamp',
@@ -23,6 +31,8 @@ export const ScalingFace: React.FC<{
 					left: '-50%',
 					transform: `scale(${scale}) translateX(${translateX}px)`,
 				}}
+				onLoad={() => continueRender(handle)}
+				onError={() => continueRender(handle)}
 			/>
 		</AbsoluteFill>
 	);
