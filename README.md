@@ -1,4 +1,4 @@
-# [Watch the video](https://example.com)
+# [Watch the video](https://twitter.com/JNYBGR/status/1360269270526136320)
 # [Watch the tutorial](https://www.youtube.com/watch?v=I-y_5H9-3gk)
 
 # Spotify Wrapped in Remotion
