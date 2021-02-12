@@ -60,7 +60,10 @@ export const Wrapped: React.FC = () => {
 							opacity: titleProgress,
 						}}
 					>
-						2020 <br />
+						2020
+						{/* eslint-disable react/jsx-child-element-spacing */}
+						<br />
+						{/* eslint-enable react/jsx-child-element-spacing */}
 						Wrapped
 					</Title>
 				</AbsoluteFill>

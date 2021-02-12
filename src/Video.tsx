@@ -25,6 +25,14 @@ export const RemotionVideo: React.FC = () => {
 				height={1280}
 				durationInFrames={210}
 				fps={30}
+				defaultProps={{
+					sources: [
+						'weeknd.jpg',
+						'maryjblige.jpg',
+						'roots.jpg',
+						'samsmith.jpg',
+					],
+				}}
 			/>
 			<Composition
 				id="Wrapped"
