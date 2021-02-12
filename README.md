@@ -1,4 +1,7 @@
-# Remotion video
+# [Watch the video](https://example.com)
+# [Watch the tutorial](https://www.youtube.com/watch?v=I-y_5H9-3gk)
+
+# Spotify Wrapped in Remotion
 
 <p align="center">
   <a href="https://github.com/JonnyBurger/remotion-logo">
@@ -6,7 +9,7 @@
   </a>
 </p>
 
-Welcome to your Remotion project!
+Three scenes from Spotify Wrapped recreated in Remotion. The video is totally parametrizable, meaning you can override the text and images via command line flag!
 
 ## Commands
 
