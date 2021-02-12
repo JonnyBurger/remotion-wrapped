@@ -3,6 +3,7 @@ import {
 	AbsoluteFill,
 	continueRender,
 	delayRender,
+	Img,
 	interpolate,
 	useCurrentFrame,
 } from 'remotion';
@@ -23,7 +24,7 @@ export const ScalingFace: React.FC<{
 				overflow: 'hidden',
 			}}
 		>
-			<img
+			<Img
 				src={image}
 				style={{
 					position: 'absolute',

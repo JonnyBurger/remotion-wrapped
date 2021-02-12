@@ -1,3 +1,4 @@
+import {Img} from 'remotion';
 import styled from 'styled-components';
 
 export const COVER_SIZE = 400;
@@ -13,7 +14,7 @@ export const Album: React.FC<{
 }> = ({imageSrc}) => {
 	return (
 		<Cover>
-			<img src={imageSrc} style={{height: COVER_SIZE, width: COVER_SIZE}} />
+			<Img src={imageSrc} style={{height: COVER_SIZE, width: COVER_SIZE}} />
 		</Cover>
 	);
 };
