@@ -1,4 +1,4 @@
-import {Sequence} from 'remotion';
+import {Sequence, useCurrentFrame} from 'remotion';
 import {Scene1} from './Scene1';
 import {Scene2} from './Scene2';
 import {Scene3} from './Scene3';
@@ -10,6 +10,7 @@ export const Main: React.FC<{
 	ranking: [string, string, string, string, string];
 	artists: string[];
 }> = ({topSongName, topSongArtistName, topSongCover, ranking, artists}) => {
+	const frame = useCurrentFrame();
 	return (
 		<>
 			<Sequence from={0} durationInFrames={210}>
@@ -25,6 +26,7 @@ export const Main: React.FC<{
 					topSongCover={topSongCover}
 				/>
 			</Sequence>
+			{frame}
 		</>
 	);
 };

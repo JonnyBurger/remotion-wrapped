@@ -1,4 +1,4 @@
-import {Img} from 'remotion';
+import {Img} from 'remotion'
 import styled from 'styled-components';
 
 export const COVER_SIZE = 400;
